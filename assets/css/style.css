@@ -1,0 +1,185 @@
+
+
+html, body {
+  background-color: rgb(122, 188, 241);
+}
+h1 {
+  font-size: 3rem;
+  margin: 1rem 0; }
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem; }
+
+h3 {
+  text-transform: uppercase; }
+
+.hide {
+  display: none; }
+
+section {
+  display: block;
+  height: 100vh; }
+
+button {
+  border: 1px solid #000000;
+  color: #0e0400;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding: .5rem;
+  background: none;
+  cursor: pointer;
+  transition: all .2s ease; }
+  button:hover {
+    background-color: #126ed8;
+    color: #f3f300;
+    cursor: pointer; }
+  button:focus {
+    outline: none;
+    outline-color: none; }
+
+button.disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  pointer-events: none; }
+
+#loader {
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  width: 300px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -150px;
+  color: #111; }
+
+#wrap {
+
+  display: none;
+  background: url("../images/bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+ }
+  #wrap #container {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+    #wrap #container .pageTitle {
+      position: fixed;
+      top: 55px;
+      height: 120px;
+      width: 960px;
+      z-index: 1000; }
+    #wrap #container #screen0 {
+      position: relative; }
+      #wrap #container #screen0 h2 {
+        position: relative;
+        top: 245px;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        color: #02214b; }
+      #wrap #container #screen0 #characters {
+        position: relative;
+        top: 275px;
+        z-index: 1400; }
+    #wrap #container #screen1 {
+      position: relative;
+      top: 0px;
+}
+      #wrap #container #screen1 #arena {
+        position: relative;
+        width: 960px;
+ }
+        #wrap #container #screen1 #arena #status {
+          height: 2.4rem;
+          position: relative;
+          top: 240px;
+          font-size: 1.4rem;
+          text-transform: uppercase;
+          line-height: 2rem;
+          color: #01163b; }
+        #wrap #container #screen1 #arena #duel {
+          position: relative;
+          top: 290px; }
+          #wrap #container #screen1 #arena #duel .card {
+            width: 200px;
+            display: inline-block; }
+          #wrap #container #screen1 #arena #duel .player {
+            position: relative;
+            right: 100px; }
+          #wrap #container #screen1 #arena #duel .opponent {
+            position: relative;
+            left: 100px; }
+        #wrap #container #screen1 #arena #attack {
+          position: relative;
+          top: 180px; }
+    #wrap #container #screen2 {
+      position: relative;
+      top: 0px; }
+      #wrap #container #screen2 #gameOver {
+        position: relative; }
+        #wrap #container #screen2 #gameOver #message {
+          height: 3rem;
+          position: relative;
+          top: 240px;
+          font-size: 1.4rem;
+          text-transform: uppercase;
+          line-height: 2rem;
+          color: #00213f; }
+        #wrap #container #screen2 #gameOver #showcase {
+          position: relative;
+          top: 320px;
+          transform: scale(1.2); }
+        #wrap #container #screen2 #gameOver #reset {
+          position: relative;
+          top: 380px; }
+
+
+.card {
+  display: inline-block;
+  width: 200px;
+  height: 320px;
+  margin-right: 20px;
+  transition: all .3s ease;
+  cursor: pointer;
+  color: #032d6d; }
+  .card:last-child {
+    margin-right: 0; }
+  .card:hover {
+    transform: scale(1.05); }
+  .card img {
+    cursor: pointer; }
+  .card h3 {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 260px;
+    width: 200px; }
+  .card h4 {
+    text-transform: uppercase;
+    position: absolute;
+    top: 285px;
+    width: 200px; }
+
+
+.disable {
+  pointer-events: none;
+  cursor: default; }
+
+.player {
+  background-color: #299ec9;
+  box-shadow: 0 0 35px #0dc8f7, 0 0 50px #0af172; }
+
+.opponent {
+  background-color: #a470f8;
+  box-shadow: 0 0 35px #b18ef3, 0 0 50px #6241e9; }
+
+.defeated {
+  box-shadow: none;
+  opacity: .3; }
