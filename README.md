@@ -4,6 +4,8 @@
 
 This is a fun and interactive game, which runs in the web browser and features dynamically updated HTML and CSS powered by JavaScript code.
 
+![](assets/images/readme.png)
+
 ### How to Play? (Challenge)
 
 1. Here's how the app works:
