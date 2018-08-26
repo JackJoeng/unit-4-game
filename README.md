@@ -6,6 +6,8 @@ This is a fun and interactive game, which runs in the web browser and features d
 
 ![](assets/images/readme.png)
 
+<a href="https://jackjoeng.github.io/unit-4-game">Check it out!</a>
+
 ### How to Play? (Challenge)
 
 1. Here's how the app works:
